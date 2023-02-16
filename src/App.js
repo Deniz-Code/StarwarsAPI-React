@@ -3,6 +3,7 @@ import "./App.css"
 import Header from "./Header"
 import { Route, Routes } from "react-router-dom"
 import Starships from "./components/Starships"
+import ShipCard from "./pages/ShipCard"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Starships />} />
+        <Route path="/ship-card" element={<ShipCard/>}/>
       </Routes>
     </>
   )
